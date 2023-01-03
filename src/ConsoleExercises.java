@@ -39,8 +39,5 @@ public class ConsoleExercises {
         System.out.println("The area is "+area);
 
 
-
-
-
     }
 }
