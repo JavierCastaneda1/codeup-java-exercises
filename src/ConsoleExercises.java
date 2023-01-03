@@ -33,8 +33,10 @@ public class ConsoleExercises {
         int length = Integer.parseInt(scanny.nextLine());
 
         float perimeter = (width * 2) + (length * 2);
-        System.out.println("The perimeter is "+perimeter);
+        float area = width * length;
 
+        System.out.println("The perimeter is "+perimeter);
+        System.out.println("The area is "+area);
 
 
 
