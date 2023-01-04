@@ -54,18 +54,18 @@ public class ControlFlowExercises {
 
 //        FIZZ BUZZ
 
-        for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0){
-                System.out.println("FizzBuzz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            }
-            else {
-                System.out.println(i);
-            }
-        }
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0){
+//                System.out.println("FizzBuzz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            }
+//            else {
+//                System.out.println(i);
+//            }
+//        }
 
 //        TABLE EXERCISE
 //            String confirm;
@@ -81,6 +81,32 @@ public class ControlFlowExercises {
 //                confirm = scanny.next();
 //            }
 //            while (confirm.equals("yes"));
+
+
+//        CODYS EXAMPLES
+//        boolean confirmation;
+//
+//        do {
+//
+//            System.out.println("What number woudl you like to go up to?");
+//            int userInt = scanny.nextInt();
+//            System.out.println("Here is your table");
+//            System.out.println("number | squared | cubed\n------ | ------ | -----");
+//
+//            for(int i = 1; i <= userInt; i++){
+//                int square = i * i;
+//                int cubed = i *i *i;
+//                System.out.printf("%-7d|%-9d|%-6d\n", i, square, cubed);
+//            }
+//            System.out.println("Continue [Y/N] ");
+//            String userInput = scanny.next();
+//            confirmation = userInput.equalsIgnoreCase("Y");
+//        } while(confirmation);
+//        System.out.println("Cool, see you next time!");
+
+
+
+
 
 //        LETTER GRADES EXERCISE
 //        String confirm;
@@ -104,6 +130,33 @@ public class ControlFlowExercises {
 //                confirm = confirm.toLowerCase();
 //        }
 //        while (Objects.equals(confirm, "yes"));
+
+
+        boolean confirmation;
+
+        do {
+            System.out.println("Input a numercal grade from 0 to 100: ");
+            int userGrade = scanny.nextInt();
+
+            if(userGrade >= 88){
+                System.out.println("A");
+            } else if(userGrade >= 80){
+                System.out.println("B");
+            } else if(userGrade >= 67){
+                System.out.println("C");
+            } else if(userGrade >= 60){
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+
+            System.out.println("Continue [Y/N] ");
+            String userInput = scanny.next();
+            confirmation = userInput.equalsIgnoreCase("Y");
+
+
+        } while (confirmation);
+            System.out.println("K Thanks Bye");
 
 
 
