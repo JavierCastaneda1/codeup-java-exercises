@@ -135,7 +135,7 @@ public class ControlFlowExercises {
         boolean confirmation;
 
         do {
-            System.out.println("Input a numercal grade from 0 to 100: ");
+            System.out.println("Input a numerical grade from 0 to 100: ");
             int userGrade = scanny.nextInt();
 
             if(userGrade >= 88){
