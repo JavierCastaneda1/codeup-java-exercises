@@ -1,4 +1,6 @@
+import java.util.Random;
 import java.util.Scanner;
+
 
 public class MethodsExercises {
     public static Scanner scannyScan = new Scanner(System.in);
@@ -67,14 +69,18 @@ public class MethodsExercises {
         }
     }
 
-    public static void numSides(){
+    public static void diceRoll(){
 
         boolean confirmation;
 
         do{
             System.out.println("Enter the number of sides for the pair of dice: ");
-            int inputSides = scannyScan.nextInt();
-            diceRoll(inputSides);
+            int userInputDice = scannyScan.nextInt();
+
+            int dice1 =(int)Math.floor(Math.random()*(userInputDice)+1);
+            int dice2 = (int)Math.floor(Math.random()*(userInputDice)+1);
+
+            System.out.printf("Dice one rolls: %d%nDice two rolls: %d%n", dice1, dice2);
 
             System.out.println("Do you want to roll again? [Y/N] ");
             String userConfirm = scannyScan.next();
@@ -82,20 +88,26 @@ public class MethodsExercises {
             scannyScan.nextLine();
         } while (confirmation);
 
+
     }
 
+    public static void guessGame(){
+        Random random = new Random();
+        int secretNumber = random.nextInt(100) + 1;
+        int guess;
+        do {
+            System.out.println("Enter your guess: ");
+            guess = scannyScan.nextInt();
 
-
-
-
-
-
-
-
-
-
-
-
+            if (guess > secretNumber) {
+                System.out.println("Your guess is too high. Try again");
+            } else if (guess < secretNumber) {
+                System.out.println("Your guess is too low. Try again");
+            } else {
+                System.out.println("Congratulations! You guessed the number!");
+            }
+        } while (guess != secretNumber);
+    }
 
 
 
@@ -112,6 +124,8 @@ public class MethodsExercises {
         int range = getRangeTwo(1,10);
         System.out.println("You entered: " +range);
         factorioMeth();
+        diceRoll();
+        guessGame();
 
 
 
