@@ -7,7 +7,7 @@ public class HighLow {
         int secretNumber = random.nextInt(100) + 1;
         int guess;
         Scanner scanner = new Scanner(System.in);
-        do {
+        do{
             System.out.println("Enter your guess: ");
             guess = scanner.nextInt();
 
