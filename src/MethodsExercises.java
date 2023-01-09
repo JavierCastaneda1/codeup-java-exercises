@@ -119,7 +119,7 @@ public class MethodsExercises {
         System.out.println(multiply(4,4));
         System.out.println(divide(10,5));
         System.out.println(modulus(10, 3));
-        System.out.println(multiloop(12,12));
+        System.out.println(multiloop(5,6));
         System.out.println(getRange(1,10));
         int range = getRangeTwo(1,10);
         System.out.println("You entered: " +range);
