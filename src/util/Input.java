@@ -53,25 +53,11 @@ public class Input {
         return userInput;
     }
 
+    public double getDouble() {
+        System.out.println("Please enter a number:");
+        double userInput = scanner.nextDouble();
+        return userInput;
+    }
 
-
-//    public double getDouble(double min, double max){
-//        double userInput;
-//        do {
-//            System.out.print("Enter a double between "+min+" and "+max+": ");
-//            userInput = this.scanner.nextDouble();
-//        } while (!(userInput>= min) && !(userInput<=max));
-//        return userInput;
-//    }
-//
-//    public double getDouble() {
-//        System.out.println("Enter a double: ");
-//        return this.scanner.nextDouble();
-//    }
-//
-//    public double getDouble(String prompt){
-//        System.out.print(prompt);
-//        return this.scanner.nextDouble();
-//    }
 
 }
