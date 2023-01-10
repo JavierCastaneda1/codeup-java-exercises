@@ -6,7 +6,7 @@ public class Square extends Rectangle {
     }
     public int getPerimeter(){
         int side = super.length;
-        return 4 * side;
+        return  side + side + side + side;
     }
     public int getArea(){
         int side = super.length;
