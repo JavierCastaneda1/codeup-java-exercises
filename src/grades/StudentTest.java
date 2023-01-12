@@ -12,6 +12,5 @@ public class StudentTest {
         System.out.println("The student grade is " +Javier.getGradeAverage());
 
 
-
     }
 }
