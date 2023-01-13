@@ -1,18 +1,20 @@
 package grades;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Student {
 
     private String name;
-    private List<Integer> grades;
+    private ArrayList<Integer> grades;
 
+
+    //this is your constructor
     public Student(String name){
         this.name = name;
         this.grades = new ArrayList<>();
     }
 
-
+    //these are your methods
     // returns the student's name
     public String getName(){
         return this.name;
@@ -26,11 +28,11 @@ public class Student {
     // returns the average of the students grades
     public double getGradeAverage(){
         int total = 0;
-
-        for (Integer grade : this.grades) {
-            total += grade;
+        for(int i = 0; i < grades.size(); i++){
+            total += grades.get(i);
         }
-        return (double)total / (double)this.grades.size();
+        return total / grades.size();
+
     }
 
 

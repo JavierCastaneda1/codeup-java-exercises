@@ -1,5 +1,7 @@
 package grades;
 
+import util.Input;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -7,15 +9,17 @@ public class GradesApplication {
 
     public static void main(String[] args) {
 
+        HashMap<String, Student> gitStudentName = new HashMap<>();
+
         Student Johnny = new Student("Johnny Depp");
         Johnny.addGrade(100);
-        Johnny.addGrade(80);
-        Johnny.addGrade(70);
+        Johnny.addGrade(90);
+        Johnny.addGrade(95);
 
         Student Brad = new Student("Brad Pitt");
-        Brad.addGrade(50);
-        Brad.addGrade(69);
-        Brad.addGrade(98);
+        Brad.addGrade(85);
+        Brad.addGrade(90);
+        Brad.addGrade(85);
 
         Student Jackson = new Student("Michael Jackson");
         Jackson.addGrade(80);
@@ -23,26 +27,36 @@ public class GradesApplication {
         Jackson.addGrade(75);
 
         Student Jordan = new Student("Michael Jordan");
-        Jordan.addGrade(72);
-        Jordan.addGrade(54);
+        Jordan.addGrade(100);
+        Jordan.addGrade(100);
         Jordan.addGrade(100);
 
         Student Tony = new Student("Tony Hawk");
         Tony.addGrade(100);
-        Tony.addGrade(99);
-        Tony.addGrade(98);
+        Tony.addGrade(90);
+        Tony.addGrade(95);
 
-        HashMap<String, Student> gitStudentName = new HashMap<>();
+        //this is for testing purposes to make sure averages are correct
+//        System.out.println(Johnny.getGradeAverage());
+//        System.out.println(Brad.getGradeAverage());
+//        System.out.println(Jackson.getGradeAverage());
+//        System.out.println(Jordan.getGradeAverage());
+//        System.out.println(Tony.getGradeAverage());
 
+
+        //the following is a step to put these into key value pairs.
         gitStudentName.put("EdwardScissorHands111", Johnny);
         gitStudentName.put("Achilles987", Brad);
         gitStudentName.put("Moonwalker78", Jackson);
         gitStudentName.put("AirJordan48", Jordan);
         gitStudentName.put("Birdman54", Tony);
 
+
+        //stick the scanner in here
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to my application!");
+
+
         String tryAgain = "";
 
 
